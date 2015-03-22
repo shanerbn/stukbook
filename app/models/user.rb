@@ -42,18 +42,8 @@ class User < ActiveRecord::Base
       end
     end
   end
+
+def friendship_relation(user_2)
+ Friendship.where(user_id: [self.id,user_2.id], friend_id: [self.id,user_2.id]).first
 end
-#
-#   def friendship_status(user_2)
-#     friendship = Friendship.where(user_id: [self.id,user_2.id], friend_id; [self.id,user_2.id])
-#     unless friendship.any?
-#       return "not_friends"
-#     else
-#       if friendship.first.user == self
-#         return "pending"
-#       else
-#         return "requested"
-#       end
-#     end
-#   end
-# end
+end
