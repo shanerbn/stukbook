@@ -42,14 +42,14 @@
       </div>
     <!-- Post Zone -->
       <div class="col-md-6">
+        <%= render "posts/form" %>
       </div>
     <!-- Profile Activity -->
         <div class="col-md-3">
           <div class="panel panel-default">
-            <div class="panel-heading">Recent Activity
-            </div>
+            <div class="panel-heading">Recent Activity</div>
             <div class="panel-body">
-          <%= render_activities(@activities) %>
+              <%= render_activities(@activities) %>
           </div>
           </div>
         </div>
