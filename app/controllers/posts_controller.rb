@@ -9,7 +9,7 @@ class PostsController < ApplicationController
         format.html {redirect_to user_path(@post.user.username), notice: "Post Created"}
       end
     else
-      redirect_to user_path(@post.user.username), notice: "Something went wrong"
+      redirect_to user_path(@post.user.username), notice: "Something went very wrong"
     end
   end
 
@@ -56,7 +56,7 @@ end
 #       format.html {redirect_to user_path(@post.user.username), notice: "Post Created"}
 #     end
 #     else
-#       redirect_to user_path(@post.user.username), notice: "Somethign went wrong"
+#       redirect_to user_path(@post.user.username), notice: "Something went wrong"
 #   end
 #
 #   def edit
