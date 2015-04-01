@@ -55,5 +55,7 @@ group :development, :test do
 
   gem 'auto_html'
 
+  #double check these
+
 end
 
