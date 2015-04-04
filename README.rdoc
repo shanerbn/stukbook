@@ -1,3 +1,5 @@
 == Stukbook
 
 This is a cool coding social network
+
+although the tutorials are very confusing!
